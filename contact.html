@@ -5,32 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact Info</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style1.css" />
     <script src="main.js"></script>
 </head>
 
 <body>
         <header>
-                <h1 class="teal">Christopher Gauthier</h1>
-                <a href="#news">About</a>
-                <a href="#contact">Portfolio</a>
-                <a href="#about">Contact</a>
+            <div class="nav">
+                <h1>Christopher Gauthier</h1>
+                <a href="#contact" id="about">Contact</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+            </div>    
             </header>
         <hr>
         
-        <div>
+        <div class="box">
             <h2>Contact</h2>
-            <hr>
+            <hr id="hr1">
 
             <form>
                 Name:<br>
-                <input type="text" name="fullname" value="">
+                <input type="text" name="fullname" value="" placeholder="John Smith">
                 <br>
                 Email:<br>
-                <input type="text" name="email" value="">
+                <input type="text" name="email" value="" placeholder="example@gmail.com">
                 <br>
                 Message:<br>
-                <input type="text" name="message" value="">
+                <input type="text" name="message" value="" class="msg" placeholder="Write something..">
                 <br><br>
                 <input type="submit" value="Submit">
             </form>

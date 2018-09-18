@@ -42,6 +42,9 @@ a:link{
     color: #777777;
     text-decoration: none; /*remove underlines from links in navbar */
 }
+a:hover{ /* Make links turn teal color when you hover mouse over them */
+    color: teal;
+}
 div.main{
     background-color: #ffffff;
     padding: 20px;
@@ -53,7 +56,8 @@ div.main{
 
 }
 body{
-    background-color:lightgray;
+     background-image: url(../images/portfolio3.jpg);
+    background: lightslategrey;
 }
 
 h1#me{
@@ -76,8 +80,24 @@ hr.aboutme{
     color:lightslategray;
 }
 img#myface{
-    float:left;
+    float:left; 
+    margin: 10px;   
+}
+.wrap1{ /*putting the image and first paragraph on same float */
+    float: left;
+    inline-size: block;
+    display: inline;
+    
 }
 p{
     line-height: 150%;
+    text-align: justify;    
 }
+footer{
+    text-align: center;
+    background-color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+}
+
