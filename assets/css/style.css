@@ -1,0 +1,66 @@
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: -15px;
+    background-color: #ffffff;
+    
+}
+ul{
+    list-style: none; /*get rid of bullet points on list */
+}
+
+ul:after{   /* clear some space after top list that is my nav bar */
+    content: "";
+    display: block;
+    clear:both;
+}
+li.name{
+    float: left;
+    margin-left: 250px;
+}
+h1{
+    background-color: #4aaaa5;
+    padding: 10px;
+    color: #ffffff;
+}
+li.about{
+    float: right;
+    margin-right: 150px;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+li.portfolio{
+    float:right;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+li.contact{
+    float:right;
+    margin-top: 30px;
+}
+a:link{
+    color: #777777;
+    text-decoration: none; /*remove underlines from links in navbar */
+}
+div.main{
+    background-color: #ffffff;
+    padding: 20px;
+    width: 70%;
+    height: 55%;
+    text-align: center;
+    margin: 30px auto;
+}
+body{
+    background-color:lightgray;
+}
+#me{
+    float: left;
+    padding-left: 15px;
+    color: #4aaaa5;
+}
+.div1:after{
+    content: "";
+    display: block;
+    clear:both;
+
+}
