@@ -53,14 +53,18 @@ div.main{
 body{
     background-color:lightgray;
 }
-#me{
+
+h1#me{
     float: left;
-    padding-left: 15px;
+    padding-left: 30px;
     color: #4aaaa5;
+    background-color: #ffffff;
 }
 .div1:after{
     content: "";
     display: block;
     clear:both;
-
+}
+hr.aboutme{
+    width: 95%;
 }
