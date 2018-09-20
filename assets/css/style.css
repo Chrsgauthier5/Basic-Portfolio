@@ -15,11 +15,11 @@ ul:after{   /* clear some space after top list that is my nav bar */
 }
 li.name{
     float: left;
-    margin-left: 250px;
+    margin-left: 400px;
 }
 h1{
     background-color: #4aaaa5;
-    padding: 10px;
+    padding: 15px;
     color: #ffffff;
 }
 li.about{
@@ -57,7 +57,7 @@ div.main{
 }
 body{
      background-image: url(../images/portfolio3.jpg);
-    background: lightslategrey;
+    background: #dddddd;
 }
 
 h1#me{
@@ -78,6 +78,7 @@ hr.aboutme{
     height: 1px;
     background-color: lightslategray;
     color:lightslategray;
+
 }
 img#myface{
     float:left; 
@@ -100,4 +101,10 @@ footer{
     color: #ffffff;
     padding: 20px;
 }
+.greenhr{
+    height: 7px;
+    background-color: #4aaaa5;
+    margin-bottom: -1px;
+}
+
 

@@ -1,5 +1,5 @@
 body{
-    background-color: #cccccc;
+    background-color: #dddddd;
 }
 .nav{
     width: 960px;
@@ -42,7 +42,8 @@ a:hover{
     margin: 30px auto;
     background: #ffffff;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;   
 }
 .box h2{
     padding-left: 2%;
@@ -58,7 +59,10 @@ footer{
 }
 form .msg{
     height:150px;
-    width: 300px;
+    width: 97%;
+}
+form .email, .name{ /*making width of input for name and email 97% of div container width */
+    width: 97%;
 }
 .box form{
     padding-left: 2%;
@@ -71,4 +75,12 @@ form .msg{
 }
 form placeholder{
     position: absolute;
+}
+form{
+    line-height: 150%;
+}
+.greenhr{
+    height: 7px;
+    background-color: #4aaaa5;
+    margin-bottom: -1px;
 }
