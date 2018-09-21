@@ -50,14 +50,21 @@ a:link{
 
 .main{ /* sets format for main div - primary "white page" section of each page */
     width:960px;
-    height: 60%;
+    height: 80%;
     margin: 30px auto;
     background: #ffffff;
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #777777;   
+    color: #777777; 
+    position: relative;  
 }
 
+.main #pics{ /* specific styling for the body of portfolio section */
+    width: 960px;
+    height: 85%;
+    margin: 0 auto;
+    
+}
 
 h1#me{ /* floats my name in index to the left and styles it */
     float: left;
@@ -85,9 +92,11 @@ hr.aboutme{ /* styles horizontal rule after main div heading */
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-img#myface{
+img#myface{ /*position of my picture on index.html */
     float:left; 
-    margin: 10px;   
+    margin: 10px;
+    height: 150px;
+    width: 200px;   
 }
 .wrap1{ /*putting the image and first paragraph on same float */
     float: left;
@@ -95,68 +104,57 @@ img#myface{
     display: inline;
     
 }
-p{
+p{ /* spaces paragraph and aligns text in index.html paragraphs section */
     line-height: 150%;
     text-align: justify;    
 }
 
-.greenhr{
+.greenhr{ /* makes horizontal rule thicker and teal, using it for bottom of pages above footer */
     height: 7px;
     background-color: #4aaaa5;
     margin-bottom: -2px;
 }
-li{
-    margin-bottom: -25px;
-}
-.tophr{
-    margin-top: -15px;
-}
-.pics{
-    width:40%;
-    height: 75%;
-    margin: 30px auto;
-    background: #ffffff;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #777777;
-    position: relative;  
-}
 
-
-.pics #hr1{
+.pics #hr1{ /* horizontal rule that goes under primary div h1 */
     width: 97%;
     height: 1px;
     background-color: lightslategray;
     color:lightslategray;
 }
-.pics img{
-    height: 150px;
-    width: 200px;
+.main img{ /* sets size of pictures on portfolio page */
+    height: 125px;
+    width: 175px;
+    
 }
-.pics #topright{
+#topright{ /*sets position of pictures on portfolio page */
     position: absolute;
-    top: 20%;
-    right: 40%;
-}
-.pics #topleft{
-    position: absolute;
-    top: 20%;
-    left: 15%;
-}
-.pics #midleft{
-    position: absolute;
-    top: 40%;
-    left: 15%;
-}
-.pics #midright{
-    position: absolute;
-    top: 40%;
+    top: 25%;
     right: 30%;
+    z-index: 0;
 }
-.pics #bottom{
+#topleft{ /*sets position of pictures on portfolio page */
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 15%;
+    z-index: 0;
+}
+#midleft{ /*sets position of pictures on portfolio page */
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    z-index: 0;
+}
+#midright{ /*sets position of pictures on portfolio page */
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    z-index: 0;
+}
+#bottom{ /*sets position of pictures on portfolio page */
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    z-index: 0;
 }
 
 
@@ -169,8 +167,9 @@ form .name, .email{ /* making input for name & email wider */
     width: 97%;
 }
 
-.main form{
+.main form{ /* adding padding and increasing line height in form on contact page */
     padding-left: 2%;
+    line-height: 150%;
 }
 .main #hr1{
     width: 97%;
@@ -181,3 +180,64 @@ form .name, .email{ /* making input for name & email wider */
 form placeholder{
     position: absolute;
 }
+.TL{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: 1;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    padding: 5px;
+    width: 165px;
+    text-align: center;
+}
+.TR{
+    position: absolute;
+    top: 35%;
+    right: 30%;
+    z-index: 1;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    padding: 5px;
+    width: 165px;
+    text-align: center;
+}
+
+.ML{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    z-index: 1;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    padding: 5px;
+    width: 165px;
+    text-align: center;
+}
+
+.MR{
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    z-index: 1;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    padding: 5px;
+    width: 165px;
+    text-align: center;
+}
+
+.BTM{
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    z-index: 1;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    padding: 5px;
+    width: 165px;
+    text-align: center;
+}
+
+
+
