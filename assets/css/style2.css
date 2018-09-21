@@ -1,0 +1,99 @@
+body{
+    background-color: #cccccc;
+}
+.nav{
+    width: 960px;
+    margin: 10px auto;  
+}
+header{
+    background-color: #ffffff;
+}
+
+a:link{
+    color: #777777;
+    text-decoration: none; /*remove underlines from links in navbar */
+}
+a:hover{ /* Make links turn teal color when you hover mouse over them */
+    color: teal;
+}
+h1{
+    color: #4aaaa5;
+    padding: 10px;
+    
+}
+.nav h1{
+    float:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    margin-left: 175px;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    float: right;
+    margin-left: 10px;
+    margin-top: 43px;
+    color: #777777;
+    text-align: center;
+    margin-right: 50px;
+}
+.nav:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer{
+    text-align: center;
+    background-color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+}
+.pics{
+    width:40%;
+    height: 75%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;
+    position: relative;  
+}
+.pics #hr1{
+    width: 97%;
+    height: 1px;
+    background-color: lightslategray;
+    color:lightslategray;
+}
+.pics img{
+    height: 150px;
+    width: 200px;
+}
+.pics #topright{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+}
+.pics #topleft{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.pics #midleft{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+.pics #midright{
+    position: absolute;
+    top: 40%;
+    right: 30%;
+}
+.pics #bottom{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}

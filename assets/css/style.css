@@ -1,84 +1,89 @@
-header{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: -15px;
-    background-color: #ffffff;
-    
+body{ /*sets body background to gray */
+    background-color: #cccccc;
 }
-ul{
-    list-style: none; /*get rid of bullet points on list */
+.nav{ /*sets header section in div "nav" width & margin */
+    width: 980px;
+    margin: 10px auto;  
+}
+header{ /* sets background color of header section to white */
+    background-color: #ffffff;
+}
+footer{
+    text-align: center;
+    background-color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
 }
 
-ul:after{   /* clear some space after top list that is my nav bar */
-    content: "";
-    display: block;
-    clear:both;
-}
-li.name{
-    float: left;
-    margin-left: 400px;
-}
-h1{
+
+.nav h1{ /* sets h1 tag with my name to green, floats it left, color white */
+    float:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #4aaaa5;
-    padding: 15px;
     color: #ffffff;
+    padding: 8px;    
 }
-li.about{
+
+.nav a{ /* floats the links to the right and defines their spacing */
+    text-decoration: none;
     float: right;
-    margin-right: 150px;
     margin-left: 20px;
-    margin-top: 30px;
-    
+    margin-top: 43px;
+    color: #777777;
+    text-align: center;
 }
-li.portfolio{
-    float:right;
-    margin-left: 20px;
-    margin-top: 30px;
+a:hover{ /* when you hover over links, this makes them turn teal */
+    color:teal;
 }
-li.contact{
-    float:right;
-    margin-top: 30px;
-}
+
 a:link{
     color: #777777;
     text-decoration: none; /*remove underlines from links in navbar */
 }
-a:hover{ /* Make links turn teal color when you hover mouse over them */
-    color: teal;
+
+.nav:after{ /* clears the float after nav div (navbar) */
+    content: "";
+    display: block;
+    clear: both;
 }
-div.main{
-    background-color: #ffffff;
-    padding: 20px;
-    width: 960px;
+
+.main{ /* sets format for main div - primary "white page" section of each page */
+    width:960px;
     height: 60%;
-    text-align: center;
     margin: 30px auto;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-
-}
-body{
-     background-image: url(../images/portfolio3.jpg);
-    background: #dddddd;
+    background: #ffffff;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;   
 }
 
-h1#me{
+
+h1#me{ /* floats my name in index to the left and styles it */
     float: left;
     padding-left: 30px;
     color: #4aaaa5;
     background-color: #ffffff;
     margin-bottom: -7px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: -10px;
 }
-.div1:after{
+.div1:after{ /* clears float */
     content: "";
     display: block;
     clear:both;
 }
-hr.aboutme{
-    width: 95%;
+hr.aboutme{ /* styles horizontal rule after main div heading */
+    width: 97%;
     height: 1px;
     background-color: lightslategray;
     color:lightslategray;
+}
 
+.main h1{ /* styles main div header */
+    padding-left: 2%;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 img#myface{
     float:left; 
@@ -94,17 +99,85 @@ p{
     line-height: 150%;
     text-align: justify;    
 }
-footer{
-    text-align: center;
-    background-color: #666666;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    padding: 20px;
-}
+
 .greenhr{
     height: 7px;
     background-color: #4aaaa5;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
+}
+li{
+    margin-bottom: -25px;
+}
+.tophr{
+    margin-top: -15px;
+}
+.pics{
+    width:40%;
+    height: 75%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;
+    position: relative;  
 }
 
 
+.pics #hr1{
+    width: 97%;
+    height: 1px;
+    background-color: lightslategray;
+    color:lightslategray;
+}
+.pics img{
+    height: 150px;
+    width: 200px;
+}
+.pics #topright{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+}
+.pics #topleft{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.pics #midleft{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+.pics #midright{
+    position: absolute;
+    top: 40%;
+    right: 30%;
+}
+.pics #bottom{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+
+
+
+form .msg{ /* making message box taller and wider */
+    height:150px;
+    width: 97%;
+}
+form .name, .email{ /* making input for name & email wider */
+    width: 97%;
+}
+
+.main form{
+    padding-left: 2%;
+}
+.main #hr1{
+    width: 97%;
+    height: 1px;
+    background-color: lightslategray;
+    color:lightslategray;
+}
+form placeholder{
+    position: absolute;
+}

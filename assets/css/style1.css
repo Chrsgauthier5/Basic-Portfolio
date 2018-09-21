@@ -1,5 +1,5 @@
 body{
-    background-color: #dddddd;
+    background-color: #cccccc;
 }
 .nav{
     width: 960px;
@@ -16,6 +16,7 @@ header{
     background-color: #4aaaa5;
     color: #ffffff;
     padding: 8px;
+    margin-left: 150px;
     
 }
 
@@ -42,8 +43,8 @@ a:hover{
     margin: 30px auto;
     background: #ffffff;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;    
 }
 .box h2{
     padding-left: 2%;
@@ -57,13 +58,14 @@ footer{
     color: #ffffff;
     padding: 20px;
 }
-form .msg{
+form .msg{ /* making message box taller and wider */
     height:150px;
     width: 97%;
 }
-form .email, .name{ /*making width of input for name and email 97% of div container width */
+form .name, .email{ /* making input for name & email wider */
     width: 97%;
 }
+
 .box form{
     padding-left: 2%;
 }
@@ -76,11 +78,12 @@ form .email, .name{ /*making width of input for name and email 97% of div contai
 form placeholder{
     position: absolute;
 }
-form{
-    line-height: 150%;
-}
-.greenhr{
+.greenhr{ /* Making green horizontal rule at bottom of page above footer */
     height: 7px;
     background-color: #4aaaa5;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
 }
+form{
+    line-height: 150%; /*adding space between form boxes */
+}
+
