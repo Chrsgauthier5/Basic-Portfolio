@@ -50,7 +50,7 @@ a:link{
 
 .main{ /* sets format for main div - primary "white page" section of each page */
     width:960px;
-    height: 80%;
+    height: 60%;
     margin: 30px auto;
     background: #ffffff;
     padding: 20px;
